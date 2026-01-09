@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Konami eFootball Community</title>
+
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#0b0b0b;
+  color:#fff;
+}
+header{
+  background:#111;
+  padding:20px;
+  text-align:center;
+  border-bottom:3px solid #00ffcc;
+}
+header h1{
+  margin:0;
+}
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:20px;
+}
+.card{
+  background:#161616;
+  border-radius:12px;
+  padding:20px;
+  margin-bottom:20px;
+}
+.card h2{
+  margin-top:0;
+}
+footer{
+  text-align:center;
+  font-size:13px;
+  opacity:0.6;
+  padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>⚽ Konami eFootball Community</h1>
+  <p>Share ideas • Feedback • Improvements</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>Welcome</h2>
+    <p>
+      This is a community for eFootball players to share ideas,
+      report issues, and discuss how Konami can improve the game.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Community Discussion</h2>
+    <!-- DISQUS WILL LOAD HERE -->
+    <div id="disqus_thread"></div>
+  </div>
+
+</div>
+
+<footer>
+  Unofficial fan community • Not affiliated with Konami
+</footer>
+
+<!-- DISQUS SCRIPT -->
+<script>
+var disqus_config = function () {
+  this.page.url = window.location.href;
+  this.page.identifier = "konami-community";
+};
+
+(function() {
+  var d = document, s = d.createElement('script');
+  s.src = 'ogb-konami-community-1.disqus.com';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+})();
+</script>
+
+</body>
+</html>
